@@ -1,2 +1,8 @@
 sudo apt-get -y update
 sudo apt-get install -y default-jdk
+sudo apt-get install -y maven
+
+git clone https://github.com/goha111/rapidoid-server.git
+cd rapidoid-server
+mvn clean package
+sudo mvn exec:java
